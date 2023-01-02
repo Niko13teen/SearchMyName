@@ -1,12 +1,14 @@
 import requests
 import argparse
 import services
+from modules import popular_services
 from colorama import init, Fore
 
 
 def main(username: str):
 	services.init()
 	print(f"\n\n[*] All Services: {len(services.service)}\n[?] TG Author: https://t.me/niko13teen\n\n")
+	popular_service(username)
 	for lists in services.service:
 		try:
 			response = requests.get(lists + username)
