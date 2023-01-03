@@ -4,6 +4,7 @@ def init():
     'https://vk.com/', 
     'https://github.com/',
     'https://ok.ru/',
+    'https://kwork.ru/user/',
     'https://247sports.com/User/',
     'https://3dtoday.ru/blogs/',
     'https://akniga.org/profile/',
