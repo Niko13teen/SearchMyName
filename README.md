@@ -3,7 +3,7 @@
 <div align="center"> <img src="https://www.einvestigator.com/wp-content/uploads/2018/08/open-source-intelligence.jpg"></div>
 <div>
   <h3>
-<code> pip3 intsall -r requirements.txt </code><br>
-<code> python3 main.py -u daniel </code>
+<code> $pip3 intsall -r requirements.txt </code><br>
+<code> $python3 main.py -u daniel </code>
   </h3>
 </div>
