@@ -84,7 +84,6 @@ def init():
     'https://quitter.pl/profile/',
     'https://dev.to/',
     'https://risk.ru/people/',
-    'https://www.dfgames.com.br/user/',
     'https://robertsspaceindustries.com/citizens/',
     'https://diablo2.io/member/',
     'https://forums.digitalspy.com/profile/discussions/',
