@@ -152,7 +152,7 @@ def init():
     'https://meow.social/@',
     'https://mssg.me/',
     'https://social.technet.microsoft.com/profile/',
-    'https://www.minds.com/sergeyrus977/',
+    'https://www.minds.com/',
     'https://www.mintme.com/token/',
     'http://api.mixlr.com/users/',
     'https://forums.mmorpg.com/profile/',
