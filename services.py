@@ -1,8 +1,9 @@
 def init():
     global service
     service = [
-    'https://101010.pl/@', 
+    'https://vk.com/', 
     'https://github.com/',
+    'https://ok.ru/',
     'https://247sports.com/User/',
     'https://3dtoday.ru/blogs/',
     'https://akniga.org/profile/',
@@ -167,7 +168,6 @@ def init():
     'https://www.nairaland.com/',
     'https://notabug.org/',
     'https://note.com/',
-    'https://ok.ru/',
     'https://omlet.gg/profile/',
     'https://opensource.com/users/',
     'https://www.openstreetmap.org/user/',
@@ -236,7 +236,6 @@ def init():
     'https://www.vibilagare.se/users/',
     'https://www.viddler.com/channel/',
     'https://vine.co/api/users/profiles/vanity/',
-    'https://vk.com/',
     'https://wanelo.co/',
     'https://www.weasyl.com/~',
     'https://weheartit.com/',
