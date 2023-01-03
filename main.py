@@ -15,7 +15,7 @@ def main(username: str):
 			if response.status_code == 200:
 				print(Fore.GREEN + f"[+] Found: {lists}{username}")
 			else:
-				print(Fore.RED + f"[-] Not found: {lists}")
+				print(Fore.RED + f"[-] Not found: {lists}{username}")
 		except Exception as error:
 			pass
 
