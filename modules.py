@@ -1,5 +1,7 @@
 from requests_html import HTMLSession
 from colorama import init, Fore
+import json
+import requests
 
 def popular_services(username):
 	session = HTMLSession()
@@ -36,4 +38,17 @@ def popular_services(username):
 			
 	steam(username)
 	
-	#TODO
+	def search_email(username):
+		service = 'https://emailrep.io/'
+		headers = {'Key':'65d451qnohz4jwjgqsrobtvs1ucw16q4wmeq63px9wc481zk'} #Free API key 'https://emailrep.io/'
+		addrs = ['@gmail.com', '@yandex.ru', '@mail.ru', '@yahoo.com', '@outlook.com']
+		for emails in addrs:
+			response = requests.get(f"{service}{username}{emails}", headers=headers)
+			data = response.json()
+			try:
+				if data['email'] == f"{username}{emails}":
+					print(Fore.GREEN + f"[+] Found: {username}{emails}")
+			except Exception as error:
+				print(Fore.RED + f"[-] Not found (Or Daily Limit API): {username}{emails}")
+			
+	search_email(username)	
