@@ -183,7 +183,6 @@ def init():
     'https://peing.net/api/v2/items/?type=answered&account=',
     'https://picsart.com/u/',
     'https://pikabu.ru/@',
-    'https://www.pillowfort.social/',
     'https://pixelfed.social/',
     'https://pokec.azet.sk/',
     'https://pokemonshowdown.com/users/',
