@@ -3,9 +3,10 @@ import argparse
 import services
 from modules import popular_services
 from colorama import init, Fore
+from typing import NoReturn
 
 
-def main(username: str) -> str:
+def main(username: str) -> NoReturn:
 	services.init()
 	print(f"\n\n[*] All Services: {len(services.service)}\n[?] Channel: https://t.me/niko13teen_channel\n\n")
 	popular_services(username)
