@@ -16,8 +16,6 @@ string: str = """
 ███████║███████╗██║  ██║██║  ██║╚██████╗██║  ██║██║ ╚═╝ ██║   ██║   ██║ ╚████║██║  ██║██║ ╚═╝ ██║███████╗
 ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
                                                                                             by Niko13TeeN"""
-
-
 async def main(username: str) -> NoReturn:
 	services.init()
 	print(f"\n{string}\n[*] All Services: {len(services.service)}\n[?] Channel: https://t.me/niko13teen_channel\n\n")
@@ -31,6 +29,7 @@ async def main(username: str) -> NoReturn:
 	        except Exception as error:
 	            pass
 
+	
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--username', '-u',
