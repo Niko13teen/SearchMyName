@@ -40,7 +40,7 @@ def popular_services(username):
 	
 	def search_email(username):
 		service = 'https://emailrep.io/'
-		headers = {'Key':'65d451qnohz4jwjgqsrobtvs1ucw16q4wmeq63px9wc481zk'} #Free API key 'https://emailrep.io/'
+		headers = {'Key':'#'} #Free API key 'https://emailrep.io/'
 		addrs = ['@gmail.com', '@yandex.ru', '@mail.ru', '@yahoo.com', '@outlook.com']
 		for emails in addrs:
 			response = requests.get(f"{service}{username}{emails}", headers=headers)
