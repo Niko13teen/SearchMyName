@@ -4,6 +4,6 @@
 <div>
   <h3>
 <pre><code>$pip3 install -r requirements.txt </code>
-<code>$python3 main.py -u daniel </code></pre>
+<code>$python3 main.py</code></pre>
   </h3>
 </div>
