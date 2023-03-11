@@ -25,7 +25,7 @@ async def main() -> str:
                 async with session.get(lists + username) as response:
                     if response.status == 200:
                         put_html(
-                            f"<div style='border: 1px solid black; padding: 15px; margin: 5px; background: #292929;'><a href='{lists}{username}' target='_blank' style='color: white;'>{lists}{username}</div></a>"
+                            f"<div style='border: 1px solid black; padding: 15px; margin-top: 5px; background: #292929;'><a href='{lists}{username}' target='_blank' style='color: white;'>{lists}{username}</div></a>"
                         )
             except Exception as error:
                 pass
