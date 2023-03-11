@@ -1,4 +1,0 @@
-argparse
-requests
-colorama
-requests_html
