@@ -16,7 +16,7 @@ async def main() -> str:
         f"All Services: {len(services.service)}", placeholder="username...", type=TEXT
     )
     put_html(
-        f"<br><div style='text-align: center;'><img src='https://media4.giphy.com/media/d3hGuic6x6e5mASmKR/giphy.gif' width='100'></div><br><br>"
+        f"<br><div style='text-align: center;'><img src='https://media4.giphy.com/media/d3hGuic6x6e5mASmKR/giphy.gif' width='100'></div><br><br><h2> Found: </h2>"
     )
     popular_services(username)
     async with aiohttp.ClientSession() as session:
