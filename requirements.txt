@@ -1,5 +1,0 @@
-aiohttp
-asyncio
-requests_html
-requests
-argparse
