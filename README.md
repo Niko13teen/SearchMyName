@@ -1,5 +1,5 @@
 <div align="center"> <h1> SearchMyName </h1></div>
-<h2> Welcome to SearchMyName! This tool allows you to enumerate usernames across many websites! OSINT Tool! </h2>
+<h3> Welcome to SearchMyName! This tool allows you to enumerate usernames across many websites! OSINT Tool! </h3>
 <div align="center"> <img src="https://media2.giphy.com/media/H6E7CjSrSVWhgEV7E8/giphy.gif?cid=ecf05e478pm9qylq0bjnj9002lkilqx1yb032v8x58tik2nx&rid=giphy.gif&ct=s"></div>
 <div>
   <h3>
