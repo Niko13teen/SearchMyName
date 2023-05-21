@@ -7,22 +7,22 @@ from typing import NoReturn
 
 @singleton
 class SearchName(object):
-    def __init__(self, username: str):
+    def __init__(self, username: str=None):
         self.username = username
         self.session = HTMLSession()
         print(
             f"{banner}\n\nSearchMyName by Niko13Teen: https://t.me/niko13teen \nAll Services: {len(service) + 3}\n"
         )
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Username: {self.username}"
 
-    def search(self):
+    def search(self) -> NoReturn:
         for url_address in service:
             try:
                 response = self.session.get(url_address + self.username)
                 if response.status_code == 200:
-                    title: str = response.html.find("title", first=True)
+                    title = response.html.find("title", first=True)
                     print(
                         f"[+] Found: {response.url} [{title.text}]"
                         if title and len(title.text) < 120
@@ -33,17 +33,17 @@ class SearchName(object):
                 continue
 
 
-def run_search(username: str) -> NoReturn:
+def run_search(username: str) -> None:
     payload = SearchName(username)
     try:
         popular_services(username)
         payload.search()
     except Exception as error:
-        return f"[!] Failed! Please, report author."
+        return f"[!] Failed! Please, report author. Error: {error}"
 
 
 if __name__ == "__main__":
-    parser: object = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--username",
         "-u",
@@ -53,5 +53,5 @@ if __name__ == "__main__":
         default="example",
     )
 
-    args: str = parser.parse_args()
+    args = parser.parse_args()
     run_search(args.username)
