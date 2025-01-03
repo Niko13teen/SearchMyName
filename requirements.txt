@@ -1,0 +1,5 @@
+requests_html
+argparse
+lxml_html_clean
+colorama
+tqdm
